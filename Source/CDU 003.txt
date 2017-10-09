@@ -1,0 +1,50 @@
+CdU003 - "Gerenciar Inventário de Jogos"
+
+P1. O usuário solicita gerenciar seus jogos.
+P2. O Sistema fornece uma lista de jogos.
+P3. O usuário solicita adicionar mais um jogo.
+P4. O Sistema fornece uma lista de jogos disponíveis.
+P5. O usuário seleciona um jogo em específico.
+P6. O sistema coloca o jogo no inventário.
+P7. Caso de uso se encerra.
+
+Fluxos alternativos de eventos
+
+A1. O usuário deseja acessar o site de um jogo
+A1.1. Em P2, o usuário solicita acessar o site oficial do jogo.
+A1.2. O sistema notifica o usuário que está saindo do domínio do site.
+A1.3. O usuário confirma a ação.
+A1.2. Sistema redireciona usuário para o site oficial.
+A1.3. O caso de uso se encerra.
+
+A2. O usuário deseja remover um jogo do inventário
+A2.1. Após P1, o usuário solicita remover um jogo do inventário.
+A2.2. O sistema informa uma notificação.
+A2.3. O usuário confirma a ação.
+A2.4. O sistema retira o jogo do inventário.
+A2.5. O caso de uso se encerra.
+
+
+Fluxos de Exceção
+
+E1 selecionar um jogo que já pertence ao inventário
+E1.1. O usuário escolhe um jogo que já se encontra no inventário.
+E1.2. O sistema notifica um erro e informa que o jogo já está no inventário.
+E1.3. O usuário confirma a notificação.
+E1.4. O caso de uso se encerra.
+
+E2. Site do jogo não cadastrado.
+E2.1. O usuário escolhe acessar o site de um jogo.
+E2.2. O sistema verifica que o site do jogo não está cadastrado e informa o usuário.
+E2.3. O usuário seleciona continuar no inventário.
+E2.4. O sistema redireciona o usuário para a tela de inventário.
+E2.5. Retorna ao P1.
+
+
+
+
+
+
+
+
+
